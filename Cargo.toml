@@ -1,0 +1,25 @@
+[package]
+name = "amo-monitor"
+version = "1.0.0"
+edition = "2021"
+description = "AMO Monitor - a modern, fully customizable terminal system monitor"
+authors = ["AMO Monitor contributors"]
+license = "MIT"
+
+[dependencies]
+ratatui = "0.30"
+crossterm = "0.29"
+sysinfo = { version = "0.38.4", default-features = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[profile.dev]
+opt-level = 1

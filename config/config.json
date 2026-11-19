@@ -1,0 +1,1063 @@
+{
+  "version": 1,
+  "theme": "Tokyo Night",
+  "color_overrides": {},
+  "refresh_ms": 1000,
+  "chart_window_secs": 30,
+  "layouts": [
+    {
+      "name": "Overview",
+      "columns": 12,
+      "rows": 9,
+      "widgets": [
+        {
+          "id": "w238409-0",
+          "kind": "Cpu",
+          "col": 0,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 3,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-1",
+          "kind": "Gpu",
+          "col": 4,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 3,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-2",
+          "kind": "Ram",
+          "col": 8,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-3",
+          "kind": "Swap",
+          "col": 0,
+          "row": 3,
+          "colspan": 4,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-4",
+          "kind": "Network",
+          "col": 4,
+          "row": 3,
+          "colspan": 8,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-5",
+          "kind": "DiskIo",
+          "col": 0,
+          "row": 6,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-6",
+          "kind": "Uptime",
+          "col": 6,
+          "row": 6,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        }
+      ],
+      "kind": "Grid",
+      "linear_metrics": [],
+      "linear_display": "Compact"
+    },
+    {
+      "name": "Focus",
+      "columns": 12,
+      "rows": 9,
+      "widgets": [
+        {
+          "id": "w238409-7",
+          "kind": "Cpu",
+          "col": 0,
+          "row": 0,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-8",
+          "kind": "Gpu",
+          "col": 6,
+          "row": 0,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-9",
+          "kind": "Ram",
+          "col": 0,
+          "row": 3,
+          "colspan": 4,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-10",
+          "kind": "Network",
+          "col": 4,
+          "row": 3,
+          "colspan": 8,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-11",
+          "kind": "DiskIo",
+          "col": 0,
+          "row": 6,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-12",
+          "kind": "Uptime",
+          "col": 6,
+          "row": 6,
+          "colspan": 6,
+          "rowspan": 3,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        }
+      ],
+      "kind": "Grid",
+      "linear_metrics": [],
+      "linear_display": "Compact"
+    },
+    {
+      "name": "Compact",
+      "columns": 12,
+      "rows": 6,
+      "widgets": [
+        {
+          "id": "w238409-13",
+          "kind": "Cpu",
+          "col": 0,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-14",
+          "kind": "Gpu",
+          "col": 4,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-15",
+          "kind": "Ram",
+          "col": 8,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-16",
+          "kind": "Network",
+          "col": 0,
+          "row": 2,
+          "colspan": 6,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-17",
+          "kind": "Swap",
+          "col": 6,
+          "row": 2,
+          "colspan": 6,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-18",
+          "kind": "DiskIo",
+          "col": 0,
+          "row": 4,
+          "colspan": 6,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-19",
+          "kind": "Uptime",
+          "col": 6,
+          "row": 4,
+          "colspan": 6,
+          "rowspan": 2,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Compact",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        }
+      ],
+      "kind": "Grid",
+      "linear_metrics": [],
+      "linear_display": "Compact"
+    },
+    {
+      "name": "Linear",
+      "columns": 12,
+      "rows": 4,
+      "widgets": [],
+      "kind": "Linear",
+      "linear_metrics": [
+        {
+          "id": "w238409-20",
+          "kind": "CpuUsage",
+          "pinned": false,
+          "group": 0,
+          "order": 0,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-21",
+          "kind": "CpuFreq",
+          "pinned": false,
+          "group": 0,
+          "order": 1,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-22",
+          "kind": "CpuPower",
+          "pinned": false,
+          "group": 0,
+          "order": 2,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-23",
+          "kind": "CpuTemp",
+          "pinned": false,
+          "group": 0,
+          "order": 3,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-24",
+          "kind": "GpuUsage",
+          "pinned": false,
+          "group": 1,
+          "order": 4,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-25",
+          "kind": "GpuFreq",
+          "pinned": false,
+          "group": 1,
+          "order": 5,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-26",
+          "kind": "GpuPower",
+          "pinned": false,
+          "group": 1,
+          "order": 6,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-27",
+          "kind": "GpuTemp",
+          "pinned": false,
+          "group": 1,
+          "order": 7,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-28",
+          "kind": "Ram",
+          "pinned": false,
+          "group": 2,
+          "order": 8,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-29",
+          "kind": "Swap",
+          "pinned": false,
+          "group": 2,
+          "order": 9,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-30",
+          "kind": "NetRx",
+          "pinned": false,
+          "group": 3,
+          "order": 10,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-31",
+          "kind": "NetTx",
+          "pinned": false,
+          "group": 3,
+          "order": 11,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-32",
+          "kind": "DiskRead",
+          "pinned": false,
+          "group": 4,
+          "order": 12,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-33",
+          "kind": "DiskWrite",
+          "pinned": false,
+          "group": 4,
+          "order": 13,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-34",
+          "kind": "Uptime",
+          "pinned": false,
+          "group": 5,
+          "order": 14,
+          "show_chart": false
+        }
+      ],
+      "linear_display": "Compact"
+    },
+    {
+      "name": "Mixed",
+      "columns": 12,
+      "rows": 8,
+      "widgets": [
+        {
+          "id": "w238409-35",
+          "kind": "Cpu",
+          "col": 0,
+          "row": 0,
+          "colspan": 6,
+          "rowspan": 4,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-36",
+          "kind": "Gpu",
+          "col": 6,
+          "row": 0,
+          "colspan": 6,
+          "rowspan": 4,
+          "pinned": true,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-37",
+          "kind": "Network",
+          "col": 0,
+          "row": 4,
+          "colspan": 6,
+          "rowspan": 4,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        },
+        {
+          "id": "w238409-38",
+          "kind": "DiskIo",
+          "col": 6,
+          "row": 4,
+          "colspan": 6,
+          "rowspan": 4,
+          "pinned": false,
+          "config": {
+            "show_primary": true,
+            "show_frequency": true,
+            "show_power": true,
+            "show_temperature": true,
+            "show_extra": true,
+            "show_chart": true,
+            "display_mode": "Medium",
+            "view_mode": "NumbersAndCharts",
+            "chart_type": "BrailleLine",
+            "history_window_secs": 30,
+            "show_grid": false,
+            "show_axes": false,
+            "y_scale": "Auto",
+            "manual_max": 100.0,
+            "line_thickness": 1
+          }
+        }
+      ],
+      "kind": "Mixed",
+      "linear_metrics": [
+        {
+          "id": "w238409-39",
+          "kind": "CpuUsage",
+          "pinned": false,
+          "group": 0,
+          "order": 0,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-40",
+          "kind": "GpuUsage",
+          "pinned": false,
+          "group": 1,
+          "order": 1,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-41",
+          "kind": "Ram",
+          "pinned": false,
+          "group": 2,
+          "order": 2,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-42",
+          "kind": "Swap",
+          "pinned": false,
+          "group": 2,
+          "order": 3,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-43",
+          "kind": "NetRx",
+          "pinned": false,
+          "group": 3,
+          "order": 4,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-44",
+          "kind": "NetTx",
+          "pinned": false,
+          "group": 3,
+          "order": 5,
+          "show_chart": false
+        },
+        {
+          "id": "w238409-45",
+          "kind": "Uptime",
+          "pinned": false,
+          "group": 5,
+          "order": 6,
+          "show_chart": false
+        }
+      ],
+      "linear_display": "Compact"
+    }
+  ],
+  "active_layout": "Overview",
+  "dynamic_colors": {
+    "enabled": true,
+    "scheme": "classic",
+    "metrics": {
+      "CPU freq": {
+        "enabled": true,
+        "thresholds": [
+          1200.0,
+          2400.0,
+          3600.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "CPU power": {
+        "enabled": true,
+        "thresholds": [
+          30.0,
+          65.0,
+          100.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "CPU temp": {
+        "enabled": true,
+        "thresholds": [
+          50.0,
+          70.0,
+          85.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "CPU usage": {
+        "enabled": true,
+        "thresholds": [
+          60.0,
+          75.0,
+          90.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "Disk read": {
+        "enabled": true,
+        "thresholds": [
+          1048576.0,
+          20971520.0,
+          104857600.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "Disk write": {
+        "enabled": true,
+        "thresholds": [
+          1048576.0,
+          20971520.0,
+          104857600.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "Download": {
+        "enabled": true,
+        "thresholds": [
+          1024.0,
+          1048576.0,
+          10485760.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "GPU freq": {
+        "enabled": true,
+        "thresholds": [
+          600.0,
+          1200.0,
+          1800.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "GPU power": {
+        "enabled": true,
+        "thresholds": [
+          80.0,
+          200.0,
+          350.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "GPU temp": {
+        "enabled": true,
+        "thresholds": [
+          50.0,
+          70.0,
+          85.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "GPU usage": {
+        "enabled": true,
+        "thresholds": [
+          60.0,
+          75.0,
+          90.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "RAM usage": {
+        "enabled": true,
+        "thresholds": [
+          60.0,
+          75.0,
+          90.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "Swap usage": {
+        "enabled": true,
+        "thresholds": [
+          60.0,
+          75.0,
+          90.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      },
+      "Upload": {
+        "enabled": true,
+        "thresholds": [
+          1024.0,
+          1048576.0,
+          10485760.0
+        ],
+        "colors": [
+          "foreground",
+          "warning",
+          "orange",
+          "danger"
+        ]
+      }
+    }
+  }
+}

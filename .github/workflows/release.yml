@@ -1,0 +1,114 @@
+name: Release
+
+# Publish a release automatically whenever a version tag is pushed:
+#   git tag v1.0.0 && git push origin v1.0.0
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-linux-arm64:
+    name: Build Linux ARM64
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain and ARM64 target
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-unknown-linux-gnu
+
+      - name: Install ARM64 cross linker
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y gcc-aarch64-linux-gnu
+
+      - name: Build optimized release binary
+        env:
+          CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: aarch64-linux-gnu-gcc
+        run: cargo build --release --locked --target aarch64-unknown-linux-gnu
+
+      - name: Verify and stage binary
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          cp target/aarch64-unknown-linux-gnu/release/amo-monitor \
+             artifacts/amo-monitor-ter-linux-arm64
+          file artifacts/amo-monitor-ter-linux-arm64
+          readelf -h artifacts/amo-monitor-ter-linux-arm64 | grep -q 'AArch64'
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: amo-monitor-ter-linux-arm64
+          path: artifacts/amo-monitor-ter-linux-arm64
+          if-no-files-found: error
+
+  build-linux-amd64:
+    name: Build Linux AMD64
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain and AMD64 target
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-unknown-linux-gnu
+
+      - name: Build optimized release binary
+        run: cargo build --release --locked --target x86_64-unknown-linux-gnu
+
+      - name: Verify and stage binary
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          cp target/x86_64-unknown-linux-gnu/release/amo-monitor \
+             artifacts/amo-monitor-ter-linux-amd64
+          file artifacts/amo-monitor-ter-linux-amd64
+          readelf -h artifacts/amo-monitor-ter-linux-amd64 | grep -q 'x86-64'
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: amo-monitor-ter-linux-amd64
+          path: artifacts/amo-monitor-ter-linux-amd64
+          if-no-files-found: error
+
+  release:
+    name: Create GitHub Release
+    needs: [build-linux-arm64, build-linux-amd64]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Generate SHA256 checksums
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum amo-monitor-ter-linux-arm64 amo-monitor-ter-linux-amd64 \
+            > amo-monitor-ter-checksums.txt
+          cat amo-monitor-ter-checksums.txt
+
+      - name: Create release and upload assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          gh release create "$TAG" \
+            --title "AMO Monitor $TAG" \
+            --generate-notes \
+            dist/amo-monitor-ter-linux-arm64 \
+            dist/amo-monitor-ter-linux-amd64 \
+            dist/amo-monitor-ter-checksums.txt

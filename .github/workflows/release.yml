@@ -72,7 +72,7 @@ jobs:
           cp target/x86_64-unknown-linux-gnu/release/amo-monitor \
              artifacts/amo-monitor-ter-linux-amd64
           file artifacts/amo-monitor-ter-linux-amd64
-          readelf -h artifacts/amo-monitor-ter-linux-amd64 | grep -q 'x86-64'
+          readelf -h artifacts/amo-monitor-ter-linux-amd64 | grep -qi 'x86-64'
 
       - name: Upload binary
         uses: actions/upload-artifact@v4
